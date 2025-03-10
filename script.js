@@ -15,6 +15,8 @@ function searchCountry() {
             const population = data[0].population;
             console.log(population);
             document.querySelector("#popu").textContent = `Population: ${population}`
+            const region = data[0].region;
+            document.querySelector("#reg").textContent = `Region: ${region}`;
             const flag = data[0].flags.png;
             console.log(flag);
             document.querySelector("#countryImage").src = flag;
